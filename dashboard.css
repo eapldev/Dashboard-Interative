@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    --background: #292738;
+    --white: #fafafa;
+    --columns: #363447;
+    --green: #81FBB8;
+    --green-gradient: rgba(129, 251, 184, 1) rgba(40, 199, 111, 1);
+    --purple-gradient: rgba(206, 159, 252, 1) rgba(115, 103, 240, 1);
+    --orange-gradient: rgba(223, 151, 128, 1) rgba(166, 109, 233, 1);
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background: var(--background);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: absolute;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+main .modal-frame{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;   
+}
+
+modal-frame, .frame1{
+    width: 296px;
+    height: 379px;
+    border-radius: 16px;
+    padding: 29px 48px 29px 48px;
+    gap: 32px;
+
+    background: var(--columns);
+}
+
+/* CONTEUDO DENTRO DO MODAL */
+
+modal-frame, .frame1 img{
+    margin-top: 40px;
+    width: 54px;
+    height: 54px;
+}
+
+modal-frame, .frame1 h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    padding-bottom: 38px;
+    
+}
+
+modal-frame, .frame1 h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 38px;
+    margin-top: -25px;
+    color: var(--green);
+}
+
+modal-frame, .frame1 p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    size: 14px;
+    line-height: 22.4px;
+    padding-top: 64px;
+    color: var(--white);
+}
+
+/* ------------------------------------ */
