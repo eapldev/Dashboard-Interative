@@ -11,38 +11,102 @@
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
         
     </head>
     
     <body>
         <main>
-            <div id="modal-frame" class="content">
-            <div class="modal-frame">
-                <div class="frame1">
-                    <h2>NPS geral</h2>
-                    <img src="assets/green-smile.svg.svg" alt="Green Smile">
-                    <h3>Excelente!</h3>
-                    <p>NPS Score 75</p>
+            <div class="content">
+                <div class="modal-frame">
+                    <div class="frame1">
+                        <h2>NPS geral</h2>
+                        <img src="assets/green-smile.svg.svg" alt="Green Smile">
+                        <h3>Excelente!</h3>
+                        <p>NPS Score 75</p>
+                    </div>
+                <div class="modal-frame">
+                    <div class="frame2">
+                        <img src="assets/dark-circle.svg.svg" alt="dark-circle">
+                        <h2>Vendas fechadas</h2>
+                        <h3>Esperado</h3>
+                        <h4>100</h4>
+                    </div>
+                    <div class="frame2text">
+                        <img src="assets/purple-circle.svg.svg" alt="dark-circle">
+                        <h3>Alcançado</h3>
+                        <h4>70</h4>
+                    </div>
                 </div>
+                <div class="modal-frame" id="frame3">
+                    <div class="frame3">
+                        <img src="assets/dark-circle.svg.svg">
+                        <h2>Meta mensal</h2>
+                        <h3>Esperado</h3>
+                        <h4>R$ 70K</h4>  
+                    </div>
+                    <div class="frame3text">
+                        <img src="assets/orange-circle.svg.svg">
+                        <h3>Alcançado</h3>
+                        <h4>R$ 63K</h4>  
+                    </div>
+                </div>
+                            
+            </div>
+            
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <h2>alcançada</h2>
+                        <div id="number">
+                        </div>
+                    </div>
+                </div>
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="220px" height="220px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                             <stop offset="0%" stop-color="#CE9FFC" />
+                            <stop offset="100%" stop-color="#7367F0" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="110" cy="110" r="95" stroke-linecap="round" />
+                 </svg>
             </div>
 
-            <div class="modal-frame">
-                <div class="frame1">
-                    <h2>NPS geral</h2>
-                    <img src="assets/green-smile.svg.svg">
-                    <h3>Excelente!</h3>
-                    <p>NPS Score 75</p>
+            <div class="skill-2">
+                <div class="outer">
+                    <div class="inner">
+                        <h2>alcançada</h2>
+                        <div id="number2">
+                            90%
+                        </div>
+                    </div>
                 </div>
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="220px" height="220px">
+                    <defs>
+                        <linearGradient id="GradientColor2">
+                             <stop offset="0%" stop-color="#DF9780" />
+                            <stop offset="100%" stop-color="#A66DE9" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="110" cy="110" r="95" stroke-linecap="round" />
+                 </svg>
             </div>
 
-            <div class="modal-frame">
-                <div class="frame1">
-                    <h2>NPS geral</h2>
-                    <img src="assets/green-smile.svg.svg">
-                    <h3>Excelente!</h3>
-                    <p>NPS Score 75</p>
-                </div>
-            </div>
+            <script>
+                let number = document.getElementById("number");
+                let counter = 0;
+                setInterval(() => {
+                    if(counter == 70){
+                        clearInterval();
+                    }else{
+                        counter += 1;
+                        number.innerHTML = counter + "%";
+                        number2.innerHTML = counter + "%";
+                    }   
+                }, 28)
+            </script>
+            
         </main>
     </body>
+</html>

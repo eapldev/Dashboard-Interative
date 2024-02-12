@@ -18,16 +18,22 @@ html{
 
 body{
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    width: 100vw;
     background: var(--background);
-}
+    overflow: hidden;
 
+}
 .content{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: start;
 }
+
 
 .sr-only{
     position: absolute;
@@ -53,7 +59,8 @@ main .modal-frame{
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;   
+    justify-content: center;
+    padding: 27px;  
 }
 
 modal-frame, .frame1{
@@ -61,20 +68,41 @@ modal-frame, .frame1{
     height: 379px;
     border-radius: 16px;
     padding: 29px 48px 29px 48px;
-    gap: 32px;
+
+    background: var(--columns);
+}
+
+modal-frame, .frame2{
+    width: 351px;
+    height: 379px;
+    border-radius: 16px;
+    padding: 29px 48px 29px 48px;
+
+    background: var(--columns);
+}
+
+modal-frame, .frame3{
+    position: relative;
+    left: -98px;
+    width: 409px;
+    height: 379px;
+    border-radius: 16px;
+    padding: 29px 48px 29px 48px;
 
     background: var(--columns);
 }
 
 /* CONTEUDO DENTRO DO MODAL */
 
-modal-frame, .frame1 img{
+/* ---------  MODAL 1 */
+
+.frame1 img{
     margin-top: 40px;
     width: 54px;
     height: 54px;
 }
 
-modal-frame, .frame1 h2{
+.frame1 h2{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: var(--white);
@@ -82,7 +110,7 @@ modal-frame, .frame1 h2{
     
 }
 
-modal-frame, .frame1 h3{
+.frame1 h3{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     padding: 38px;
@@ -90,7 +118,7 @@ modal-frame, .frame1 h3{
     color: var(--green);
 }
 
-modal-frame, .frame1 p{
+.frame1 p{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     size: 14px;
@@ -99,4 +127,308 @@ modal-frame, .frame1 p{
     color: var(--white);
 }
 
-/* ------------------------------------ */
+/* ------------  MODAL 1 */
+
+
+/* ------------  MODAL 2 */
+
+/* SUBTITLE */
+.frame2 h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    padding-bottom: 38px;
+
+    position: relative;
+    top: -20px;
+    left: 0px;
+}
+.frame2 p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: -5px;
+    color: var(--white);
+}
+
+.frame3 h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    padding-bottom: 38px;
+
+    position: relative;
+    top: -20px;
+    left: 0px;
+}
+/* ------------------------------- */
+
+/* CIRCLE PROGRESS */
+.skill{
+    top: -344px;
+    left: 414px;
+    width: 225px;
+    height: 225px;
+    /* background: cornflowerblue; */
+    position: relative;
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    background-color: #474556;
+
+    padding: 110px;
+    position: relative;
+}
+
+.inner{
+    position: relative;
+    left: -80px;
+    top: -80px;
+
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    background-color: #363447;
+}
+
+.inner h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fafafa;
+
+    left: 40px;
+    top: 18px;
+    position: relative;
+}
+
+#number{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fafafa;
+
+    left: -40px;
+    top: -10px;
+    position: relative;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 31px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+/* END CIRCLE PROGRESS */
+
+/* ------------ Baseboard --------- MODAL 2 ----- */
+
+.frame2 h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa;
+
+    position: relative;
+    top: 220px;
+    left: -80px;
+}
+
+.frame2 h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fafafa;
+    position: relative;
+    top: 204px;
+    left: -30px;
+}
+
+.frame2 img{
+    position: relative;
+    top: 307px;
+    left: -125px;
+}
+
+.frame2text h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa;
+
+    position: relative;
+    top: 154px;
+    left: -153px;
+}
+
+.frame2text h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fafafa;
+    position: relative;
+    top: 137px;
+    left: -102px;
+}
+
+.frame2text img{
+    position: relative;
+    top: 174px;
+    left: -202px;
+}
+
+/* ------------  MODAL 3 */
+
+.frame3 h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa;
+    position: relative;
+    bottom: -220px;
+    left: -109px;
+}
+
+.frame3 h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fafafa;
+    position: relative;
+    top: 204px;
+    left: -44px;
+}
+
+.frame3 img{
+    position: relative;
+    top: 307px;
+    left: -154px;
+}
+
+.frame3text h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa;
+    position: relative;
+    bottom: -154px;
+    left: -275px;
+}
+
+.frame3text h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fafafa;
+    position: relative;
+    bottom: -138px;
+    left: -206px;
+}
+
+.frame3text img{
+    position: relative;
+    top: 174px;
+    left: -323px;
+}
+
+/* ------------------------------------------------------ */
+
+.skill-2{
+    top: -568px;
+    left: 822px;
+    width: 225px;
+    height: 225px;
+    /* background: cornflowerblue; */
+    position: relative;
+}
+
+.skill-2 .outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    background-color: #474556;
+
+    padding: 110px;
+    position: relative;
+}
+
+.skill-2 .inner{
+    position: relative;
+    left: -80px;
+    top: -80px;
+
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    background-color: #363447;
+}
+
+.skill-2 .inner h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fafafa;
+
+    left:44px;
+    top: 18px;
+    position: relative;
+}
+
+.skill-2 circle{
+    fill: none;
+    stroke: url(#GradientColor2);
+    stroke-width: 31px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+}
+
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.skill-2 svg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.skill-2 #number2{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fafafa;
+
+    left: -40px;
+    top: -10px;
+    position: relative;
+}
