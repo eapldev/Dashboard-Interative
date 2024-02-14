@@ -90,7 +90,7 @@
                         <div class="sex">
                         </div>
                         <div class="sab">
-                        </div>
+                        </div>           
                     </div>
                     
                 </div>
@@ -122,7 +122,7 @@
                     <div class="inner">
                         <h2>alcançada</h2>
                         <div id="number2">
-                            90%
+                            
                         </div>
                     </div>
                 </div>
@@ -146,9 +146,18 @@
                     }else{
                         counter += 1;
                         number.innerHTML = counter + "%";
-                        number2.innerHTML = counter + "%";
                     }   
                 }, 28)
+
+                let counter2 = 0;
+                setInterval(() => {
+                    if(counter2 == 90){
+                        clearInterval();
+                    }else{
+                        counter2 += 1;
+                        number2.innerHTML = counter2 + "%";
+                    }   
+                }, 22)
             </script>
             
         </main>

@@ -11,9 +11,7 @@ html{
     --white: #fafafa;
     --columns: #363447;
     --green: #81FBB8;
-    --green-gradient: rgba(129, 251, 184, 1) rgba(40, 199, 111, 1);
-    --purple-gradient: rgba(206, 159, 252, 1) rgba(115, 103, 240, 1);
-    --orange-gradient: rgba(223, 151, 128, 1) rgba(166, 109, 233, 1);
+    --minicolumns: #90F7EC;
 }
 
 body{
@@ -37,7 +35,7 @@ body{
     display: grid;
     align-items: center; 
     justify-content: center;
-    left: 900px;
+    left: 910px;
     position: relative;
 }
 
@@ -232,8 +230,8 @@ circle{
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 31px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
     animation: anim 2s linear forwards;
 }
 
@@ -245,7 +243,7 @@ svg{
 
 @keyframes anim{
     100%{
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 70;
     }
 }
 /* END CIRCLE PROGRESS */
@@ -357,7 +355,7 @@ svg{
 .frame3text img{
     position: relative;
     top: 174px;
-    left: -323px;
+    left: -324px;
 }
 
 /* ------------------------------------------------------ */
@@ -412,8 +410,8 @@ svg{
     fill: none;
     stroke: url(#GradientColor2);
     stroke-width: 31px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
     animation: anim2 2s linear forwards;
 }
 
@@ -587,7 +585,7 @@ text-modal-extend{
     width: 15px;
     height: 39px;
     border-radius: 999px;
-    background: aquamarine;
+    background: #32CCBC;
     position: relative;
     left: 5px;
     bottom: -45px
@@ -597,7 +595,7 @@ text-modal-extend{
     width: 15px;
     height: 115px;
     border-radius: 999px;
-    background: aquamarine;
+    background: #32CCBC;
     position: relative;
     left: 8px;
     bottom: -7px;
@@ -607,7 +605,7 @@ text-modal-extend{
     width: 15px;
     height: 76px;
     border-radius: 999px;
-    background: aquamarine;
+    background: #32CCBC;
     position: relative;
     left: 4px;
     bottom: -26px;
@@ -617,7 +615,7 @@ text-modal-extend{
     width: 15px;
     height: 155px;
     border-radius: 999px;
-    background: aquamarine;
+    background: #32CCBC;
     position: relative;
     left: 2px;
     bottom: 13px;
@@ -627,7 +625,7 @@ text-modal-extend{
     width: 15px;
     height: 129px;
     border-radius: 999px;
-    background: aquamarine;
+    background: #32CCBC;
     position: relative;
     left: 0px;
     bottom: 0px;
@@ -637,7 +635,7 @@ text-modal-extend{
     width: 15px;
     height: 120px;
     border-radius: 999px;
-    background: aquamarine;
+    background: #32CCBC;
     position: relative;
     left: -5px;
     bottom: -4px;
@@ -647,7 +645,7 @@ text-modal-extend{
     width: 15px;
     height: 67px;
     border-radius: 999px;
-    background: aquamarine;
+    background: #32CCBC;
     position: relative;
     left: -6px;
     bottom: -30px;
